@@ -1,0 +1,26 @@
+GET http://localhost:5036/posts
+
+
+###
+POST http://localhost:5036/posts
+Content-Type: application/json
+
+{
+    "username": "Jayden",
+    "title": "How To Cook",
+    "content": "This is a random Post that teaches how to Cookie"
+}
+
+###
+PUT http://localhost:5036/posts/10
+Content-Type: application/json
+
+{
+    "username": "Jayden",
+    "title": "Monalisa",
+    "content": "Lil Wayne ft Kendrick Lamar"
+}
+
+
+###
+DELETE http://localhost:5036/posts/3
