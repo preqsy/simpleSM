@@ -1,10 +1,12 @@
-﻿namespace MySocialMedia.Api.Dtos;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MySocialMedia.Api.Dtos;
 
 public record class CreatePostsDto(
 
-    string Username,
-    string Title,
-    string Content,
+    [Required][StringLength(maximumLength: 10)] string Username,
+    [Required][StringLength(maximumLength: 20)] string Title,
+    [Required] string Content,
     DateTime CreatedAt
 
 );
